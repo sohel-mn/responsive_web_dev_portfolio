@@ -1,0 +1,224 @@
+/* fonts */
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  /* ========== shared style starts =========== */
+  .secondary_bg{
+      background-color: #FFF8F3;
+  }
+  .text-primary{
+      color: #FD6E0A;
+  }
+  .dark_2{
+      color: #474747;
+  }
+  .btn_primary{
+      background-color: #FD6E0A;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 20px 35px;
+      font-size: 20px;
+  }
+  .section_title{
+      font-size: 35px;
+      font-weight: bold;
+      color: #181818;
+  
+  }
+  .section_description{
+      font-size: 18 px;
+      /* font-weight: bold; */
+      color: #757575;
+  
+  }
+  .text_center{
+      text-align: center;
+  }
+  /* --------------- shared style ends ---------- */
+  
+  /* nav styles */
+  .header{
+      background-image: url("../images/developer.png"), url("../images/header_bg.png");
+      background-repeat: no-repeat;
+      background-position: top left, bottom right;
+  }
+  nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 200px;
+  }
+  .nav-title{
+      font-weight: 800;
+      font-size: 45px;
+  }
+  nav ul{
+      display: flex;
+      align-items: center;
+  }
+  nav ul li {
+      list-style: none;
+      margin-right: 50px;
+  }
+  nav li a {
+      text-decoration: none;
+      font-size: 20px;
+  }
+  /* =========== banner starts ================ */
+  .banner{
+      display: flex;
+      justify-content: space-between;
+      margin: 0 30px 0 200px;
+  }
+  .banner_content{
+      max-width: 580px;
+  }
+  .banner_greetings{
+      font-size: 45px;
+      font-weight: 600;
+       
+  }
+  .banner_title{
+      font-size: 70px;
+      font-weight: bold;
+  }
+  .banner_description{
+      font-size: 16px;
+      font-weight: 400;
+  }
+  .banner_profile_image{
+      width: 580px;
+  }
+  /* banner part ends */
+  /* main body part starts */
+  main {
+      max-width: 1140px;
+      margin: 0 auto;
+  }
+  main section{
+      margin-top: 130px;
+      margin-bottom: 130px;
+  }
+  /* main body part ends */
+  
+  /* about part starts */
+  .about_part{
+      border-radius: 10px;
+      padding: 130px 150px;
+      text-align: center;
+      
+  }
+  .about_items{
+      display: flex;
+      justify-content: space-around;
+  }
+  .item_description{
+      font-weight: 600;
+      margin-top: -10px;
+  }
+  /* ---------- about part ends -----------*/
+  /*============ what I do part starts ===========*/
+  .skill_container{
+      display: flex;
+      gap: 24px;
+      margin-top: 30px;
+  }
+  
+  .skill_item{
+      padding: 30px;
+      box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.10);
+      
+  }
+  /*-------------- what I do part ends -----------*/
+  /*============ resume part starts ===========*/
+  .resume_container{
+      display: flex;
+      gap: 24px;
+  }
+  .experience_subtitle{
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+  }
+  .experience_description, .{
+      color: #757575;
+  }
+  .resume hr{
+      margin: 30px 10px;
+  }
+  .resume_download_btn{
+      margin-top: 30px;
+  }
+  /*-------------- resume part ends -----------*/
+  /*============ footer part starts ===========*/
+  footer{
+      padding: 130px 230px;
+      display: flex;
+      gap: 100px;
+  }
+  .footer_column{
+      width: 50%;
+  }
+  footer input[type="text"], footer input[type="email"], footer textarea{
+      height: 64px;
+      border-radius: 5px;
+      background-color: #fff;
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      margin-bottom: 24px;
+      border: none;
+  }
+  /*-------------- footer part ends -----------*/
+  
+  /* responsive part from here for mobile device */
+  
+  @media screen and (max-width: 576px) {
+      .skill_container, 
+      .resume_container, 
+       footer,
+       nav,
+       nav > ul,
+       .banner,
+       .about_items
+      {
+          flex-direction: column;
+      }
+      nav > ul{
+          gap: 20px;
+      }
+      .header{
+          background-image: none;
+      }
+      .banner{
+          margin: 20px;
+      }
+      .banner_profile_image {
+          width: 100%;
+      }
+      footer, .about_items{
+          padding: 20px;
+      }
+      .footer_column{
+          width: 100%;
+      }
+      footer input[type="text"], footer input[type="email"], footer textarea{
+          width: calc(100% - 40px);
+      }
+      .btn_primary{
+          margin-bottom: 20px;
+      }   
+  }
+  /* responsive part from here for tablet device */
+  
+  @media screen and (min-width: 576px) and (max-width: 990px) {
+      .banner{
+          flex-direction: column;
+      }
+  }
